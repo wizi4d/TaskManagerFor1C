@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<Constant uuid="6c8a8106-004c-4ae6-bd14-dff08febd35a">
-		<InnerInfo>
-			<xr:producedType name="ConstantManager.мзОграничениеНаКоличествоИсполнителей" category="Manager">
-				<xr:typeId>ac2d772e-7b45-4bbd-8d34-b56d0aa8cf47</xr:typeId>
-				<xr:valTypeId>c3ac9502-9f94-4cfb-bf27-64c91e50af66</xr:valTypeId>
-			</xr:producedType>
-			<xr:producedType name="ConstantValueManager.мзОграничениеНаКоличествоИсполнителей" category="ValueManager">
-				<xr:typeId>c61e22ab-617f-4169-bfd1-c2fb221352d1</xr:typeId>
-				<xr:valTypeId>3c13c548-d4b9-44ef-aeb1-39bf72e959f0</xr:valTypeId>
-			</xr:producedType>
-		</InnerInfo>
+		<InternalInfo>
+			<xr:GeneratedType name="ConstantManager.мзОграничениеНаКоличествоИсполнителей" category="Manager">
+				<xr:TypeId>ac2d772e-7b45-4bbd-8d34-b56d0aa8cf47</xr:TypeId>
+				<xr:ValueId>c3ac9502-9f94-4cfb-bf27-64c91e50af66</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="ConstantValueManager.мзОграничениеНаКоличествоИсполнителей" category="ValueManager">
+				<xr:TypeId>c61e22ab-617f-4169-bfd1-c2fb221352d1</xr:TypeId>
+				<xr:ValueId>3c13c548-d4b9-44ef-aeb1-39bf72e959f0</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
 			<Name>мзОграничениеНаКоличествоИсполнителей</Name>
 			<Synonym>

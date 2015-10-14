@@ -1,36 +1,36 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<InformationRegister uuid="ba47ca93-2d2a-4d8b-ac2f-c4dd7148d7a5">
-		<InnerInfo>
-			<xr:producedType name="InformationRegisterRecord.мзНастройкиМетодовОбработчиков" category="Record">
-				<xr:typeId>15b18da1-0912-4cf7-ac04-7d8de32f72fb</xr:typeId>
-				<xr:valTypeId>75d89b67-e292-4da3-9d00-2d2fdacd220d</xr:valTypeId>
-			</xr:producedType>
-			<xr:producedType name="InformationRegisterManager.мзНастройкиМетодовОбработчиков" category="Manager">
-				<xr:typeId>0ef23d57-77f2-4b59-bd27-14ae8b721454</xr:typeId>
-				<xr:valTypeId>b6aeeba4-5d67-42d3-a152-c76b3d84fcb4</xr:valTypeId>
-			</xr:producedType>
-			<xr:producedType name="InformationRegisterSelection.мзНастройкиМетодовОбработчиков" category="Selection">
-				<xr:typeId>0fa62ecb-6ba0-47aa-bcc1-529476bdafde</xr:typeId>
-				<xr:valTypeId>c52b1ad8-6035-4b61-b4e8-a672a6879b67</xr:valTypeId>
-			</xr:producedType>
-			<xr:producedType name="InformationRegisterList.мзНастройкиМетодовОбработчиков" category="List">
-				<xr:typeId>3d391c01-c623-4be5-b537-888e4dd9cdf4</xr:typeId>
-				<xr:valTypeId>b6a01c3d-8269-4a83-9569-c03aed2fcbab</xr:valTypeId>
-			</xr:producedType>
-			<xr:producedType name="InformationRegisterRecordSet.мзНастройкиМетодовОбработчиков" category="RecordSet">
-				<xr:typeId>6c993a34-6509-458e-87fd-eb7d5b9bd447</xr:typeId>
-				<xr:valTypeId>098d1602-078f-4617-a540-34e89350283f</xr:valTypeId>
-			</xr:producedType>
-			<xr:producedType name="InformationRegisterRecordKey.мзНастройкиМетодовОбработчиков" category="RecordKey">
-				<xr:typeId>beeae3b2-f140-416c-a70b-823a54cf5852</xr:typeId>
-				<xr:valTypeId>20c4fea1-3c59-4021-888f-da82ea5849bd</xr:valTypeId>
-			</xr:producedType>
-			<xr:producedType name="InformationRegisterRecordManager.мзНастройкиМетодовОбработчиков" category="RecordManager">
-				<xr:typeId>771b8baa-36ed-46f2-8602-5b5e53a50707</xr:typeId>
-				<xr:valTypeId>d0a39382-940d-447c-afc5-75f3177f8001</xr:valTypeId>
-			</xr:producedType>
-		</InnerInfo>
+		<InternalInfo>
+			<xr:GeneratedType name="InformationRegisterRecord.мзНастройкиМетодовОбработчиков" category="Record">
+				<xr:TypeId>15b18da1-0912-4cf7-ac04-7d8de32f72fb</xr:TypeId>
+				<xr:ValueId>75d89b67-e292-4da3-9d00-2d2fdacd220d</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterManager.мзНастройкиМетодовОбработчиков" category="Manager">
+				<xr:TypeId>0ef23d57-77f2-4b59-bd27-14ae8b721454</xr:TypeId>
+				<xr:ValueId>b6aeeba4-5d67-42d3-a152-c76b3d84fcb4</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterSelection.мзНастройкиМетодовОбработчиков" category="Selection">
+				<xr:TypeId>0fa62ecb-6ba0-47aa-bcc1-529476bdafde</xr:TypeId>
+				<xr:ValueId>c52b1ad8-6035-4b61-b4e8-a672a6879b67</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterList.мзНастройкиМетодовОбработчиков" category="List">
+				<xr:TypeId>3d391c01-c623-4be5-b537-888e4dd9cdf4</xr:TypeId>
+				<xr:ValueId>b6a01c3d-8269-4a83-9569-c03aed2fcbab</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordSet.мзНастройкиМетодовОбработчиков" category="RecordSet">
+				<xr:TypeId>6c993a34-6509-458e-87fd-eb7d5b9bd447</xr:TypeId>
+				<xr:ValueId>098d1602-078f-4617-a540-34e89350283f</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordKey.мзНастройкиМетодовОбработчиков" category="RecordKey">
+				<xr:TypeId>beeae3b2-f140-416c-a70b-823a54cf5852</xr:TypeId>
+				<xr:ValueId>20c4fea1-3c59-4021-888f-da82ea5849bd</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="InformationRegisterRecordManager.мзНастройкиМетодовОбработчиков" category="RecordManager">
+				<xr:TypeId>771b8baa-36ed-46f2-8602-5b5e53a50707</xr:TypeId>
+				<xr:ValueId>d0a39382-940d-447c-afc5-75f3177f8001</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
 		<Properties>
 			<Name>мзНастройкиМетодовОбработчиков</Name>
 			<Synonym>
@@ -47,7 +47,7 @@
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
 			<StandardAttributes>
-				<xr:Attribute name="Active">
+				<xr:StandardAttribute name="Active">
 					<xr:LinkByType/>
 					<xr:FillChecking>DontCheck</xr:FillChecking>
 					<xr:MultiLine>false</xr:MultiLine>
@@ -71,8 +71,8 @@
 					<xr:FillValue xsi:nil="true"/>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
-				</xr:Attribute>
-				<xr:Attribute name="LineNumber">
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="LineNumber">
 					<xr:LinkByType/>
 					<xr:FillChecking>DontCheck</xr:FillChecking>
 					<xr:MultiLine>false</xr:MultiLine>
@@ -96,8 +96,8 @@
 					<xr:FillValue xsi:nil="true"/>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
-				</xr:Attribute>
-				<xr:Attribute name="Recorder">
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Recorder">
 					<xr:LinkByType/>
 					<xr:FillChecking>DontCheck</xr:FillChecking>
 					<xr:MultiLine>false</xr:MultiLine>
@@ -121,8 +121,8 @@
 					<xr:FillValue xsi:nil="true"/>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
-				</xr:Attribute>
-				<xr:Attribute name="Period">
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Period">
 					<xr:LinkByType/>
 					<xr:FillChecking>ShowError</xr:FillChecking>
 					<xr:MultiLine>false</xr:MultiLine>
@@ -146,7 +146,7 @@
 					<xr:FillValue xsi:nil="true"/>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
-				</xr:Attribute>
+				</xr:StandardAttribute>
 			</StandardAttributes>
 			<InformationRegisterPeriodicity>Nonperiodical</InformationRegisterPeriodicity>
 			<WriteMode>Independent</WriteMode>

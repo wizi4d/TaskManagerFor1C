@@ -15,14 +15,14 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:item xsi:type="xr:MDObjectRef">InformationRegister.мзЗадания</xr:item>
-				<xr:item xsi:type="xr:MDObjectRef">Constant.мзОграничениеНаКоличествоИсполнителей</xr:item>
-				<xr:item xsi:type="xr:MDObjectRef">DataProcessor.мзУправлениеМенеджеромЗаданий</xr:item>
-				<xr:item xsi:type="xr:MDObjectRef">CommonModule.мзЗадания</xr:item>
-				<xr:item xsi:type="xr:MDObjectRef">ScheduledJob.мзМенеджерЗаданий</xr:item>
-				<xr:item xsi:type="xr:MDObjectRef">Enum.мзСостоянияЗаданий</xr:item>
-				<xr:item xsi:type="xr:MDObjectRef">Constant.мзГлубинаХраненияИстории</xr:item>
-				<xr:item xsi:type="xr:MDObjectRef">InformationRegister.мзНастройкиМетодовОбработчиков</xr:item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.мзЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мзОграничениеНаКоличествоИсполнителей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.мзУправлениеМенеджеромЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.мзЗадания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.мзМенеджерЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.мзСостоянияЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.мзГлубинаХраненияИстории</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.мзНастройкиМетодовОбработчиков</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

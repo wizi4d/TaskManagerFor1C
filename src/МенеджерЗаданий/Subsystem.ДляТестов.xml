@@ -15,7 +15,7 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:item xsi:type="xr:MDObjectRef">CommonModule.Тестирование</xr:item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.Тестирование</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

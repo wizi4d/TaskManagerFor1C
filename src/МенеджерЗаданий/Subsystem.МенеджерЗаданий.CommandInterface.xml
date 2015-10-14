@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<commandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-	<commandVisibility>
-		<command>InformationRegister.мзНастройкиМетодовОбработчиков.StandardCommand.OpenList</command>
-		<visibility>
-			<xr:common>false</xr:common>
-		</visibility>
-	</commandVisibility>
-	<commandVisibility>
-		<command>Constant.мзГлубинаХраненияИстории.StandardCommand.Open</command>
-		<visibility>
-			<xr:common>false</xr:common>
-		</visibility>
-	</commandVisibility>
-	<commandVisibility>
-		<command>Constant.мзОграничениеНаКоличествоИсполнителей.StandardCommand.Open</command>
-		<visibility>
-			<xr:common>false</xr:common>
-		</visibility>
-	</commandVisibility>
-</commandInterface>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<CommandsVisibility>
+		<Command name="InformationRegister.мзНастройкиМетодовОбработчиков.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.мзГлубинаХраненияИстории.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Constant.мзОграничениеНаКоличествоИсполнителей.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+</CommandInterface>
