@@ -5,6 +5,7 @@
 		<ChildItems>
 			<Button name="ЗапуститьМенеджераЗаданий" id="1">
 				<Type>CommandBarButton</Type>
+				<DefaultButton>true</DefaultButton>
 				<CommandName>Form.Command.ЗапуститьМенеджераЗаданий</CommandName>
 				<Parameter xsi:nil="true"/>
 				<ExtendedTooltip name="ЗапуститьМенеджераЗаданийExtendedTooltip" id="55"/>
@@ -18,6 +19,7 @@
 			<Button name="ОтменитьЗаданияВОчереди" id="31">
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
+				<OnlyInAllActions>false</OnlyInAllActions>
 				<CommandName>Form.Command.ОтменитьВсеЗаданияВОчереди</CommandName>
 				<Parameter xsi:nil="true"/>
 				<Picture>
@@ -26,11 +28,21 @@
 				</Picture>
 				<ExtendedTooltip name="ОтменитьЗаданияВОчередиExtendedTooltip" id="57"/>
 			</Button>
-			<Button name="ФормаНастройки" id="54">
+			<Button name="ПринудительноОбновитьДанныеПоИсполнителямИЗаданиям" id="40">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Настройки</CommandName>
+				<CommandName>Form.Command.ПринудительноОбновитьДанныеПоИсполнителямИЗаданиям</CommandName>
 				<Parameter xsi:nil="true"/>
-				<ExtendedTooltip name="ФормаНастройкиExtendedTooltip" id="58"/>
+				<Picture>
+					<xr:Ref>StdPicture.Refresh</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Обновить</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ПринудительноОбновитьДанныеПоИсполнителямИЗаданиямExtendedTooltip" id="66"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -39,152 +51,236 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Группа_КоличествоИсполнителей" id="26">
+		<UsualGroup name="ГруппаЛеваяИПраваяПанели" id="73">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа количество исполнителей</v8:content>
+					<v8:content>Левая и правая панели (группа)</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа количество исполнителей</v8:content>
+					<v8:content>Группа левая и правая панели</v8:content>
 				</v8:item>
 			</ToolTip>
-			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Horizontal</Group>
+			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа_КоличествоИсполнителейExtendedTooltip" id="59"/>
+			<ExtendedTooltip name="ГруппаЛеваяИПраваяПанелиРасширеннаяПодсказка" id="74"/>
 			<ChildItems>
-				<CheckBoxField name="МенеджерЗапущен" id="45">
-					<DataPath>МенеджерЗапущен</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="МенеджерЗапущенКонтекстноеМеню" id="46"/>
-					<ExtendedTooltip name="МенеджерЗапущенExtendedTooltip" id="60"/>
-				</CheckBoxField>
-				<InputField name="ОграничениеНаКоличествоИсполнителей" id="3">
-					<DataPath>ОграничениеНаКоличествоИсполнителей</DataPath>
-					<ContextMenu name="ОграничениеНаКоличествоИсполнителейКонтекстноеМеню" id="4"/>
-					<ExtendedTooltip name="ОграничениеНаКоличествоИсполнителейExtendedTooltip" id="61"/>
-				</InputField>
-				<Button name="СохранитьОграничениеПоКоличествуИсполнителей" id="25">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.СохранитьОграничениеПоКоличествуИсполнителей</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="СохранитьОграничениеПоКоличествуИсполнителейExtendedTooltip" id="62"/>
-				</Button>
-				<InputField name="ГлубинаХраненияИстории" id="49">
-					<DataPath>ГлубинаХраненияИстории</DataPath>
-					<ContextMenu name="ГлубинаХраненияИсторииКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ГлубинаХраненияИсторииExtendedTooltip" id="63"/>
-				</InputField>
-				<Button name="СохранитьГлубинуХраненияИстории" id="51">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.СохранитьГлубинуХраненияИстории</CommandName>
-					<Parameter xsi:nil="true"/>
-					<ExtendedTooltip name="СохранитьГлубинуХраненияИсторииExtendedTooltip" id="64"/>
-				</Button>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Группа_ДанныеПоИсполнителямИЗаданиям" id="34">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа данные по исполнителям и заданиям</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа данные по исполнителям и заданиям</v8:content>
-				</v8:item>
-			</ToolTip>
-			<HorizontalStretch>true</HorizontalStretch>
-			<Group>Horizontal</Group>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа_ДанныеПоИсполнителямИЗаданиямExtendedTooltip" id="65"/>
-			<ChildItems>
-				<Button name="ПринудительноОбновитьДанныеПоИсполнителямИЗаданиям" id="40">
-					<Type>UsualButton</Type>
-					<Representation>Picture</Representation>
-					<CommandName>Form.Command.ПринудительноОбновитьДанныеПоИсполнителямИЗаданиям</CommandName>
-					<Parameter xsi:nil="true"/>
-					<Picture>
-						<xr:Ref>StdPicture.Refresh</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
-					</Picture>
-					<ExtendedTooltip name="ПринудительноОбновитьДанныеПоИсполнителямИЗаданиямExtendedTooltip" id="66"/>
-				</Button>
-				<LabelField name="КоличествоАктивныхИсполнителей" id="41">
-					<DataPath>КоличествоАктивныхИсполнителей</DataPath>
+				<UsualGroup name="ЛеваяПанель" id="75">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Активные исполнители</v8:content>
+							<v8:content>Настройки</v8:content>
 						</v8:item>
 					</Title>
-					<Format>
+					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ЧН=0</v8:content>
+							<v8:content>Левая панель</v8:content>
 						</v8:item>
-					</Format>
-					<ContextMenu name="КоличествоАктивныхИсполнителейКонтекстноеМеню" id="42"/>
-					<ExtendedTooltip name="КоличествоАктивныхИсполнителейExtendedTooltip" id="67"/>
-				</LabelField>
-				<LabelField name="КоличествоЗаданийВОчереди" id="43">
-					<DataPath>КоличествоЗаданийВОчереди</DataPath>
+					</ToolTip>
+					<ExtendedTooltip name="ЛеваяПанельРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаОграничениеПоКоличествуИсполнителей" id="71">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ограничение по количеству исполнителей (группа)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ограничение по количеству исполнителей</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОграничениеПоКоличествуИсполнителейРасширеннаяПодсказка" id="72"/>
+							<ChildItems>
+								<InputField name="ОграничениеНаКоличествоИсполнителей" id="3">
+									<DataPath>ОграничениеНаКоличествоИсполнителей</DataPath>
+									<Width>6</Width>
+									<ContextMenu name="ОграничениеНаКоличествоИсполнителейКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="ОграничениеНаКоличествоИсполнителейExtendedTooltip" id="61"/>
+								</InputField>
+								<Button name="СохранитьОграничениеПоКоличествуИсполнителей" id="25">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СохранитьОграничениеПоКоличествуИсполнителей</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="СохранитьОграничениеПоКоличествуИсполнителейExtendedTooltip" id="62"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаГлубинаХраненияИстории" id="26">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Глубина хранения истории (группа)</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа глубина хранения истории</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаГлубинаХраненияИсторииРасширеннаяПодсказка" id="59"/>
+							<ChildItems>
+								<InputField name="ГлубинаХраненияИстории" id="49">
+									<DataPath>ГлубинаХраненияИстории</DataPath>
+									<Width>6</Width>
+									<ContextMenu name="ГлубинаХраненияИсторииКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ГлубинаХраненияИсторииExtendedTooltip" id="63"/>
+								</InputField>
+								<Button name="СохранитьГлубинуХраненияИстории" id="51">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СохранитьГлубинуХраненияИстории</CommandName>
+									<Parameter xsi:nil="true"/>
+									<ExtendedTooltip name="СохранитьГлубинуХраненияИсторииExtendedTooltip" id="64"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="ФормаНастройки" id="54">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.Настройки</CommandName>
+							<Parameter xsi:nil="true"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настройка методов обработчиков</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ФормаНастройкиExtendedTooltip" id="58"/>
+						</Button>
+						<Button name="ОчередьЗаданий" id="81">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.ОчередьЗаданий</CommandName>
+							<Parameter xsi:nil="true"/>
+							<ExtendedTooltip name="ОчередьЗаданийРасширеннаяПодсказка" id="82"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ПраваяПанель" id="77">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>В очереди</v8:content>
+							<v8:content>Состояние</v8:content>
 						</v8:item>
 					</Title>
-					<Format>
+					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ЧН=0</v8:content>
+							<v8:content>Правая панель</v8:content>
 						</v8:item>
-					</Format>
-					<ContextMenu name="КоличествоЗаданийВОчередиКонтекстноеМеню" id="44"/>
-					<ExtendedTooltip name="КоличествоЗаданийВОчередиExtendedTooltip" id="68"/>
-				</LabelField>
-				<LabelField name="КоличествоЗаданийНаПаузе" id="52">
-					<DataPath>КоличествоЗаданийНаПаузе</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>На паузе</v8:content>
-						</v8:item>
-					</Title>
-					<Format>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ЧН=0</v8:content>
-						</v8:item>
-					</Format>
-					<ContextMenu name="КоличествоЗаданийНаПаузеКонтекстноеМеню" id="53"/>
-					<ExtendedTooltip name="КоличествоЗаданийНаПаузеExtendedTooltip" id="69"/>
-				</LabelField>
-				<LabelField name="ВсегоАктивныхЗаданий" id="47">
-					<DataPath>ВсегоАктивныхЗаданий</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Всего</v8:content>
-						</v8:item>
-					</Title>
-					<Format>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ЧН=0</v8:content>
-						</v8:item>
-					</Format>
-					<ContextMenu name="ВсегоАктивныхЗаданийКонтекстноеМеню" id="48"/>
-					<ExtendedTooltip name="ВсегоАктивныхЗаданийExtendedTooltip" id="70"/>
-				</LabelField>
+					</ToolTip>
+					<ExtendedTooltip name="ПраваяПанельРасширеннаяПодсказка" id="78"/>
+					<ChildItems>
+						<UsualGroup name="Группа_ДанныеПоИсполнителямИЗаданиям" id="34">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные по исполнителям и заданиям</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа данные по исполнителям и заданиям</v8:content>
+								</v8:item>
+							</ToolTip>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа_ДанныеПоИсполнителямИЗаданиямExtendedTooltip" id="65"/>
+							<ChildItems>
+								<CheckBoxField name="МенеджерЗапущен" id="45">
+									<DataPath>МенеджерЗапущен</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="МенеджерЗапущенКонтекстноеМеню" id="46"/>
+									<ExtendedTooltip name="МенеджерЗапущенExtendedTooltip" id="60"/>
+								</CheckBoxField>
+								<LabelField name="КоличествоАктивныхИсполнителей" id="41">
+									<DataPath>КоличествоАктивныхИсполнителей</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Активные исполнители</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="КоличествоАктивныхИсполнителейКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="КоличествоАктивныхИсполнителейExtendedTooltip" id="67"/>
+								</LabelField>
+								<LabelField name="КоличествоЗаданийВОчереди" id="43">
+									<DataPath>КоличествоЗаданийВОчереди</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>В очереди</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="КоличествоЗаданийВОчередиКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="КоличествоЗаданийВОчередиExtendedTooltip" id="68"/>
+								</LabelField>
+								<LabelField name="КоличествоЗаданийНаПаузе" id="52">
+									<DataPath>КоличествоЗаданийНаПаузе</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>На паузе</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="КоличествоЗаданийНаПаузеКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="КоличествоЗаданийНаПаузеExtendedTooltip" id="69"/>
+								</LabelField>
+								<LabelField name="ВсегоАктивныхЗаданий" id="47">
+									<DataPath>ВсегоАктивныхЗаданий</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Всего</v8:content>
+										</v8:item>
+									</Title>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧН=0</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ВсегоАктивныхЗаданийКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="ВсегоАктивныхЗаданийExtendedTooltip" id="70"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -248,7 +344,7 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>4</v8:Digits>
+					<v8:Digits>10</v8:Digits>
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
@@ -324,7 +420,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Запустить менеджера заданий</v8:content>
+					<v8:content>Запустить выполнение заданий</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -344,7 +440,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Остановить менеджера заданий и исполнителей</v8:content>
+					<v8:content>Остановить выполнение заданий</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -445,10 +541,26 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>StdPicture.CustomizeForm</xr:Ref>
+				<xr:Ref>StdPicture.DataCompositionOutputParameters</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>Настройки</Action>
+			<Representation>Text</Representation>
+		</Command>
+		<Command name="ОчередьЗаданий" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очередь заданий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очередь заданий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчередьЗаданий</Action>
 		</Command>
 	</Commands>
 </Form>
