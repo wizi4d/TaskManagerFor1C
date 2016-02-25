@@ -1,4 +1,4 @@
-Поставки/
+﻿/Поставки/
 
-Тесты/
-!Тесты/README.md
+/tests/*
+!/tests/README.md
