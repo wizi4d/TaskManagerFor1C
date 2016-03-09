@@ -1,0 +1,3 @@
+#!/bin/sh
+echo "Start hooks post-merge. Compile erf and epf files"
+oscript -encoding=utf-8 "utils\precommit1c\v8files-extractor.os" --compile "src\tests" "tests" --recursive
