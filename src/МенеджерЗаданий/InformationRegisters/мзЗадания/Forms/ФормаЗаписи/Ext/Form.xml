@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<CommandSet>
+		<ExcludedCommand>WriteAndClose</ExcludedCommand>
+		<ExcludedCommand>Copy</ExcludedCommand>
+		<ExcludedCommand>Write</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="29">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<InputField name="Период" id="1">
+					<DataPath>Запись.Period</DataPath>
+					<ContextMenu name="ПериодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Состояние" id="7">
+					<DataPath>Запись.Состояние</DataPath>
+					<ContextMenu name="СостояниеКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="25">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="26"/>
+			<ChildItems>
+				<InputField name="НачалоВыполнения" id="16">
+					<DataPath>Запись.НачалоВыполнения</DataPath>
+					<ContextMenu name="НачалоВыполненияКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НачалоВыполненияРасширеннаяПодсказка" id="18"/>
+				</InputField>
+				<InputField name="ЗавершениеВыполнения" id="19">
+					<DataPath>Запись.ЗавершениеВыполнения</DataPath>
+					<ContextMenu name="ЗавершениеВыполненияКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ЗавершениеВыполненияРасширеннаяПодсказка" id="21"/>
+				</InputField>
+				<InputField name="КоличествоПопытокВыполения" id="22">
+					<DataPath>Запись.КоличествоПопытокВыполения</DataPath>
+					<ContextMenu name="КоличествоПопытокВыполенияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="КоличествоПопытокВыполенияРасширеннаяПодсказка" id="24"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ИмяМетода" id="10">
+			<DataPath>Запись.ИмяМетода</DataPath>
+			<ContextMenu name="ИмяМетодаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИмяМетодаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<UsualGroup name="Группа2" id="27">
+			<Group>Horizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<InputField name="Ключ" id="4">
+					<DataPath>Ключ</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КлючКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="КлючРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="КлючИсполнителя" id="13">
+					<DataPath>КлючИсполнителя</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ContextMenu name="КлючИсполнителяКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КлючИсполнителяРасширеннаяПодсказка" id="15"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ПараметрыЗадания" id="69">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры задания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры задания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ПараметрыЗаданияРасширеннаяПодсказка" id="70"/>
+			<ChildItems>
+				<Pages name="Страницы" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страницы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="58"/>
+					<ChildItems>
+						<Page name="XML" id="59">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>XML</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>XML</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="XMLРасширеннаяПодсказка" id="60"/>
+							<ChildItems>
+								<HTMLDocumentField name="ПараметрыЗаданияXML" id="54">
+									<DataPath>ПараметрыЗаданияXML</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ПараметрыЗаданияXMLКонтекстноеМеню" id="55"/>
+									<ExtendedTooltip name="ПараметрыЗаданияXMLРасширеннаяПодсказка" id="56"/>
+								</HTMLDocumentField>
+							</ChildItems>
+						</Page>
+						<Page name="ЗначениеВСтроку" id="61">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значение в строку</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Значение в строку</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ЗначениеВСтрокуРасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<InputField name="ПараметрыЗаданияСтрока" id="63">
+									<DataPath>ПараметрыЗаданияСтрока</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<TitleLocation>None</TitleLocation>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ПараметрыЗаданияСтрокаКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ПараметрыЗаданияСтрокаРасширеннаяПодсказка" id="65"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.мзЗадания</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДеревоПараметры" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево параметры</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыЗаданияXML" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры задания XML</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Ключ" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючИсполнителя" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ исполнителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыЗаданияСтрока" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры задания строка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
