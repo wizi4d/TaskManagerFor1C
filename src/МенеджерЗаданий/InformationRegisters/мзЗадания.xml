@@ -42,7 +42,7 @@
 			<Comment/>
 			<UseStandardCommands>false</UseStandardCommands>
 			<EditType>InDialog</EditType>
-			<DefaultRecordForm/>
+			<DefaultRecordForm>InformationRegister.мзЗадания.Form.ФормаЗаписи</DefaultRecordForm>
 			<DefaultListForm>InformationRegister.мзЗадания.Form.ФормаСписка</DefaultListForm>
 			<AuxiliaryRecordForm/>
 			<AuxiliaryListForm/>
@@ -486,6 +486,8 @@
 				</Properties>
 			</Dimension>
 			<Form>ФормаСписка</Form>
+			<Form>ФормаЗаписи</Form>
+			<Template>defaultss_xml</Template>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>
