@@ -1,6 +1,6 @@
 ﻿copyinfo-->und\copyinfo
 e55b6225-b6a5-497d-8138-9d717a530aa8.0\info-->und\e55b6225-b6a5-497d-8138-9d717a530aa8.0\info
-e55b6225-b6a5-497d-8138-9d717a530aa8.0\text-->ObjectModule.txt
+e55b6225-b6a5-497d-8138-9d717a530aa8.0\text-->ObjectModule.bsl
 fed00b80-d6f3-4e51-a432-abf2eaba9aee-->und\fed00b80-d6f3-4e51-a432-abf2eaba9aee
 root-->und\root
 version-->und\version
